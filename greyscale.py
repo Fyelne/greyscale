@@ -4,7 +4,7 @@ i=0 #Progress index
 dirnumber=0
 
 infile = 'Example : C:\\Users\\myuser\\Desktop\\' #Source folder (don't forget \\ at the end)
-outfile= 'C:\\Users\\lbrazard\\Desktop\\Andy\\gray\\output\\' #Destination folder (It need to didn't exist)
+outfile= 'Example : C:\\Users\\myuser\\Desktop\\New folder\\' #Destination folder (It need to didn't exist)
 
 def ig_f(dir, files): #Copy folder hierarchy
     return [f for f in files if os.path.isfile(os.path.join(dir, f))]
