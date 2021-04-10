@@ -27,5 +27,5 @@ for root, dirs, files in os.walk(infile, topdown=False):
     file, ext = os.path.splitext(name)
     if(ext in [".png",".jpg"]): #Supported extensions (you can add more if you want)
       with Image.open(root + "\\"+name) as im:
-        image=im.convert('L') #Convert into greyscale
+        image=im.convert('LA') #Convert into greyscale
         image.save(outcurrent+"\\"+name, "PNG") #Save at dest copy
